@@ -1,12 +1,15 @@
+import logo from '../../public/images/airbnb-logo.png';
+import photoGrid from '../../public/images/photo-grid.png';
+
 export default function Hero(){
     return (
         <>
         <nav className='nav-bar'>
-            <img src="../public/images/airbnb-logo.png"></img>
+            <img src={logo}></img>
         </nav>
 
         <div className="photo-grid">
-            <img src="../public/images/photo-grid.png"></img>
+            <img src={photoGrid}></img>
         </div>
 
         <div className="hero-text">
