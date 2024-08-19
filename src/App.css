@@ -63,7 +63,9 @@ img{
   display: flex;
   flex-direction: column;
   height: 300px;
+  aspect-ratio: 1/2;
   margin: 1em;
+  position: relative;
 }
 .card-status{
   background-color: white;

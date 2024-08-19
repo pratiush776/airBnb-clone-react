@@ -1,9 +1,15 @@
 import star from "../../public/images/star.png"
 
 export default function Card(props) {
+  let cardStatus= ""
+  if (props.openSpots === 0 ){
+    cardStatus = "SOLD OUT"
+  }  else if (props.location === "Online"){
+    cardStatus = "ONLINE"
+  }
     return (
         <div className="card-container">
-          {/* <span className="card-status">{props.status}</span> */}
+          {cardStatus && <span className="card-status">{cardStatus}</span>}
           <img className="card-image" src={`https://picsum.photos/200/300?random=${Math.random()}`} alt="image"></img>
           <span className="rating-details">
             <img className=" card-text card-star" src={star}></img>
